@@ -1,6 +1,9 @@
 package br.com.fiap.pettech.pettech.core.domain.ong;
 
-public class Ong extends Pessoa{
+import br.com.fiap.pettech.pettech.core.shared.Pessoa;
+import br.com.fiap.pettech.pettech.core.shared.TipoPessoa;
+
+public class Ong extends Pessoa {
 
     private final String CNPJ;
 

@@ -1,6 +1,6 @@
 package br.com.fiap.pettech.pettech.core.shared;
 
-public class Pessoa {
+public abstract class Pessoa {
 
     public String nome;
     public String telefone;

@@ -1,5 +1,8 @@
 package br.com.fiap.pettech.pettech.core.domain.adotante;
 
+import br.com.fiap.pettech.pettech.core.shared.Pessoa;
+import br.com.fiap.pettech.pettech.core.shared.TipoPessoa;
+
 public class Adotante extends Pessoa {
 
     private String genero;
