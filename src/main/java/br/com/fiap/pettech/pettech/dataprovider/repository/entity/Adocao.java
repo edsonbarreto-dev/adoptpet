@@ -7,8 +7,8 @@ import java.util.List;
 
 public class Adocao {
     private Long id;
-    private Familia familia;
-    private List<Pet> pets;
+    private AdotanteEntity adotanteEntity;
+    private List<PetEntity> pets;
     private AdocaoEnum status;
     private LocalDate dataAdocao;
 }

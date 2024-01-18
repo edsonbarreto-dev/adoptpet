@@ -1,19 +1,29 @@
-package br.com.fiap.pettech.pettech.core.shared;
+package br.com.fiap.pettech.pettech.dataprovider.repository.entity;
 
-public abstract class Pessoa {
+import br.com.fiap.pettech.pettech.core.shared.TipoPessoa;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "pessoa")
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public abstract class PessoaEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     protected Long id;
     public String nome;
     public String telefone;
     public String email;
+    @ManyToOne
+    @JoinColumn(name = "endereco")
     public Endereco endereco;
     public TipoPessoa tipoPessoa;
 
-    public Pessoa(String nome) {
+    public PessoaEntity(String nome) {
         this.nome = nome;
     }
 
-    public Pessoa() {}
+    public PessoaEntity() {}
 
     public abstract void setTipoPessoa();
 
@@ -44,4 +54,9 @@ public abstract class Pessoa {
     public Endereco getEndereco() {
         return endereco;
     }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
 }

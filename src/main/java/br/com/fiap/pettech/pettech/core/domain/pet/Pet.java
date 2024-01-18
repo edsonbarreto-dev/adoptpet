@@ -1,15 +1,21 @@
 package br.com.fiap.pettech.pettech.core.domain.pet;
 
+import br.com.fiap.pettech.pettech.core.shared.SexoPetEnum;
+import br.com.fiap.pettech.pettech.core.shared.StatusPetEnum;
+
 public abstract class Pet {
-    public String registro;
-    public final String nome;
-    public final String raca;
-    public String corDoPelo = "Não informado";
-    public String corDosOlhos = "Não informado";
-    public int idade;
-    public int expectativaDeVida;
-    public double peso;
-    public double altura;
+    protected String registro;
+    protected final String nome;
+    protected final String raca;
+    protected String corDoPelo = "Não informado";
+    protected String corDosOlhos = "Não informado";
+    protected int idade;
+    protected int expectativaDeVida;
+    protected String porte;
+    protected double peso;
+    protected double altura;
+    protected SexoPetEnum sexo;
+    protected StatusPetEnum status;
 
     public Pet(String nome, String raca) {
         this.nome = nome;

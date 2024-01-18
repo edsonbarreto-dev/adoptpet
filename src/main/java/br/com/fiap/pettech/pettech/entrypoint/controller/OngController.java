@@ -1,6 +1,6 @@
 package br.com.fiap.pettech.pettech.entrypoint.controller;
 
-import br.com.fiap.pettech.pettech.dataprovider.repository.entity.Ong;
+import br.com.fiap.pettech.pettech.dataprovider.repository.entity.OngEntity;
 import br.com.fiap.pettech.pettech.services.OngService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,19 +16,19 @@ public class OngController {
     private OngService ongService;
 
     @GetMapping
-    public List<Ong> listarTodos() {
+    public List<OngEntity> listarTodos() {
         return ongService.listAll();
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Ong> buscarPorId(@PathVariable Long id) {
-        Optional<Ong> existe = ongService.findById(id);
+    public ResponseEntity<OngEntity> buscarPorId(@PathVariable Long id) {
+        Optional<OngEntity> existe = ongService.findById(id);
         return existe.isPresent() ? ResponseEntity.ok(existe.get())
                 : ResponseEntity.notFound().build();
     }
 
     @PostMapping
-    public ResponseEntity<Ong> inserir(@RequestBody Ong obj) {
+    public ResponseEntity<OngEntity> inserir(@RequestBody OngEntity obj) {
         return ResponseEntity.ok(ongService.save(obj));
     }
 
