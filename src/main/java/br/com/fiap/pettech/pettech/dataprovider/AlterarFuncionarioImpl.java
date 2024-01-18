@@ -1,6 +1,6 @@
 package br.com.fiap.pettech.pettech.dataprovider;
 
-import br.com.fiap.pettech.pettech.core.dataprovider.AlterarFuncionario;
+import br.com.fiap.pettech.pettech.core.dataprovider.funcionario.AlterarFuncionario;
 import br.com.fiap.pettech.pettech.core.domain.funcionario.Funcionario;
 import br.com.fiap.pettech.pettech.dataprovider.client.mapper.FuncionarioEntityMapper;
 import br.com.fiap.pettech.pettech.dataprovider.repository.FuncionarioRepository;

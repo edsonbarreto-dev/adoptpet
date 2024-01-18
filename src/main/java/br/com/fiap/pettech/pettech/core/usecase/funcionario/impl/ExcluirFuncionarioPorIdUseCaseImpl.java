@@ -1,8 +1,8 @@
-package br.com.fiap.pettech.pettech.core.usecase.impl;
+package br.com.fiap.pettech.pettech.core.usecase.funcionario.impl;
 
-import br.com.fiap.pettech.pettech.core.dataprovider.ExcluirFuncionarioPorId;
-import br.com.fiap.pettech.pettech.core.usecase.BuscaFuncionarioPorIdUseCase;
-import br.com.fiap.pettech.pettech.core.usecase.ExcluirFuncionarioPorIdUseCase;
+import br.com.fiap.pettech.pettech.core.dataprovider.funcionario.ExcluirFuncionarioPorId;
+import br.com.fiap.pettech.pettech.core.usecase.funcionario.BuscaFuncionarioPorIdUseCase;
+import br.com.fiap.pettech.pettech.core.usecase.funcionario.ExcluirFuncionarioPorIdUseCase;
 
 public class ExcluirFuncionarioPorIdUseCaseImpl implements ExcluirFuncionarioPorIdUseCase {
     private final BuscaFuncionarioPorIdUseCase buscaFuncionarioPorIdUseCase;

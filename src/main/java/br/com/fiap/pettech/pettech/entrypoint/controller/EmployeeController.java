@@ -1,13 +1,8 @@
 package br.com.fiap.pettech.pettech.entrypoint.controller;
 
-import br.com.fiap.pettech.pettech.core.usecase.impl.BuscaFuncionarioPorIdUseCaseImpl;
-import br.com.fiap.pettech.pettech.dataprovider.repository.entity.Endereco;
+import br.com.fiap.pettech.pettech.core.usecase.funcionario.impl.BuscaFuncionarioPorIdUseCaseImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/endereco")

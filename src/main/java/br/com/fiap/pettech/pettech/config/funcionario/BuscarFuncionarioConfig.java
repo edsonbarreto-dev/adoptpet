@@ -1,8 +1,8 @@
-package br.com.fiap.pettech.pettech.config;
+package br.com.fiap.pettech.pettech.config.funcionario;
 
 
-import br.com.fiap.pettech.pettech.core.dataprovider.BuscarFuncionarioPorId;
-import br.com.fiap.pettech.pettech.core.usecase.impl.BuscaFuncionarioPorIdUseCaseImpl;
+import br.com.fiap.pettech.pettech.core.dataprovider.funcionario.BuscarFuncionarioPorId;
+import br.com.fiap.pettech.pettech.core.usecase.funcionario.impl.BuscaFuncionarioPorIdUseCaseImpl;
 
 import br.com.fiap.pettech.pettech.dataprovider.BuscarFuncionarioPorIdImpl;
 import org.springframework.context.annotation.Bean;

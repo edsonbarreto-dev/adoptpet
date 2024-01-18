@@ -1,11 +1,9 @@
-package br.com.fiap.pettech.pettech.core.usecase.impl;
+package br.com.fiap.pettech.pettech.core.usecase.funcionario.impl;
 
-import br.com.fiap.pettech.pettech.core.dataprovider.AlterarFuncionario;
 import br.com.fiap.pettech.pettech.core.dataprovider.BuscarCep;
-import br.com.fiap.pettech.pettech.core.dataprovider.InserirFuncionario;
+import br.com.fiap.pettech.pettech.core.dataprovider.funcionario.InserirFuncionario;
 import br.com.fiap.pettech.pettech.core.domain.funcionario.Funcionario;
-import br.com.fiap.pettech.pettech.core.usecase.BuscaFuncionarioPorIdUseCase;
-import br.com.fiap.pettech.pettech.core.usecase.InserirFuncionarioUseCase;
+import br.com.fiap.pettech.pettech.core.usecase.funcionario.InserirFuncionarioUseCase;
 
 public class InserirFuncionarioUseCaseImpl implements InserirFuncionarioUseCase {
 

@@ -1,8 +1,6 @@
-package br.com.fiap.pettech.pettech.config;
+package br.com.fiap.pettech.pettech.config.funcionario;
 
-import br.com.fiap.pettech.pettech.core.dataprovider.BuscarCep;
-import br.com.fiap.pettech.pettech.core.dataprovider.InserirFuncionario;
-import br.com.fiap.pettech.pettech.core.usecase.impl.InserirFuncionarioUseCaseImpl;
+import br.com.fiap.pettech.pettech.core.usecase.funcionario.impl.InserirFuncionarioUseCaseImpl;
 import br.com.fiap.pettech.pettech.dataprovider.BuscarEnderecoPorCepImpl;
 import br.com.fiap.pettech.pettech.dataprovider.InserirFuncionarioImpl;
 import org.springframework.context.annotation.Bean;

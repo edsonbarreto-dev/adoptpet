@@ -1,8 +1,8 @@
-package br.com.fiap.pettech.pettech.core.usecase.impl;
+package br.com.fiap.pettech.pettech.core.usecase.funcionario.impl;
 
-import br.com.fiap.pettech.pettech.core.dataprovider.BuscarFuncionarioPorId;
+import br.com.fiap.pettech.pettech.core.dataprovider.funcionario.BuscarFuncionarioPorId;
 import br.com.fiap.pettech.pettech.core.domain.funcionario.Funcionario;
-import br.com.fiap.pettech.pettech.core.usecase.BuscaFuncionarioPorIdUseCase;
+import br.com.fiap.pettech.pettech.core.usecase.funcionario.BuscaFuncionarioPorIdUseCase;
 
 public class BuscaFuncionarioPorIdUseCaseImpl implements BuscaFuncionarioPorIdUseCase {
     private final BuscarFuncionarioPorId buscarFuncionarioPorId;

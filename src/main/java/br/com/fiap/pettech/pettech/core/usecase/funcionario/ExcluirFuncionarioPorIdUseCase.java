@@ -1,4 +1,4 @@
-package br.com.fiap.pettech.pettech.core.usecase;
+package br.com.fiap.pettech.pettech.core.usecase.funcionario;
 
 public interface ExcluirFuncionarioPorIdUseCase {
 
