@@ -1,4 +1,4 @@
-package br.com.fiap.pettech.pettech.controller;
+package br.com.fiap.pettech.pettech.entrypoint.controller;
 
 import br.com.fiap.pettech.pettech.dataprovider.repository.entity.Ong;
 import br.com.fiap.pettech.pettech.services.OngService;

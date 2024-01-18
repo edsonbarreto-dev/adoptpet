@@ -1,7 +1,6 @@
-package br.com.fiap.pettech.pettech.controller;
+package br.com.fiap.pettech.pettech.entrypoint.controller;
 
 import br.com.fiap.pettech.pettech.dataprovider.repository.entity.Endereco;
-import br.com.fiap.pettech.pettech.services.EnderecoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,9 +10,9 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/endereco")
-public class EnderecoController {
+public class EmployeeController {
     @Autowired
-    private EnderecoService enderecoService;
+    private EmployeeUseCaseImpl employeeUseCaseImpl;
 
     @GetMapping
     public List<Endereco> listarTodos() {
