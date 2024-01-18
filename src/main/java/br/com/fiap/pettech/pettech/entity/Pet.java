@@ -1,7 +1,7 @@
 package br.com.fiap.pettech.pettech.entity;
 
-import br.com.fiap.pettech.pettech.enums.SexoPetEnum;
-import br.com.fiap.pettech.pettech.enums.StatusPetEnum;
+import br.com.fiap.pettech.pettech.core.shared.SexoPetEnum;
+import br.com.fiap.pettech.pettech.core.shared.StatusPetEnum;
 import jakarta.persistence.*;
 
 @Entity
