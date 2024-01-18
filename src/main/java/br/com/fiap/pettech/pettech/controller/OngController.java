@@ -1,6 +1,6 @@
 package br.com.fiap.pettech.pettech.controller;
 
-import br.com.fiap.pettech.pettech.entity.Ong;
+import br.com.fiap.pettech.pettech.dataprovider.repository.entity.Ong;
 import br.com.fiap.pettech.pettech.services.OngService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

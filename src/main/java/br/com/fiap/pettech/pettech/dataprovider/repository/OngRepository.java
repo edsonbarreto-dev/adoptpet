@@ -1,6 +1,6 @@
 package br.com.fiap.pettech.pettech.dataprovider.repository;
 
-import br.com.fiap.pettech.pettech.entity.Ong;
+import br.com.fiap.pettech.pettech.dataprovider.repository.entity.Ong;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

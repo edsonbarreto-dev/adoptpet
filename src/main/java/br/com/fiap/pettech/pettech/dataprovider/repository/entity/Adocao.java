@@ -1,4 +1,4 @@
-package br.com.fiap.pettech.pettech.entity;
+package br.com.fiap.pettech.pettech.dataprovider.repository.entity;
 
 import br.com.fiap.pettech.pettech.core.shared.AdocaoEnum;
 
