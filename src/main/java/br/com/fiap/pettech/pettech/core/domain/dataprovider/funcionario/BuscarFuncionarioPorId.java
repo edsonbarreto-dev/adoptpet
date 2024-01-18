@@ -4,7 +4,9 @@ import br.com.fiap.pettech.pettech.core.domain.funcionario.Funcionario;
 
 import java.util.Optional;
 
-public interface FindEmployeeById {
+public interface BuscarFuncionarioPorId {
 
-    Optional<Funcionario> find(final String id);
+    Optional<Funcionario> find(final Long id);
+
+
 }

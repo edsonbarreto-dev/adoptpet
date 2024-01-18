@@ -9,6 +9,15 @@ public abstract class Pessoa {
     public Endereco endereco;
     public TipoPessoa tipoPessoa;
 
+    public Pessoa(Long id, String nome, String telefone, String email, Endereco endereco, TipoPessoa tipoPessoa) {
+        this.id = id;
+        this.nome = nome;
+        this.telefone = telefone;
+        this.email = email;
+        this.endereco = endereco;
+        this.tipoPessoa = tipoPessoa;
+    }
+
     public Pessoa(String nome) {
         this.nome = nome;
     }
@@ -43,5 +52,17 @@ public abstract class Pessoa {
 
     public Endereco getEndereco() {
         return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

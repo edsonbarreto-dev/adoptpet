@@ -2,8 +2,7 @@ package br.com.fiap.pettech.pettech.core.usecase;
 
 import br.com.fiap.pettech.pettech.core.domain.funcionario.Funcionario;
 
-public interface FindEmployeeByIdUseCase {
+public interface AlterarFuncionarioUseCase {
 
-    Funcionario find(final String id);
-
+    void update(Funcionario funcionario, String cep);
 }

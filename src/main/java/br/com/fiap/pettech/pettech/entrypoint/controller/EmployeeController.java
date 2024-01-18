@@ -1,5 +1,6 @@
 package br.com.fiap.pettech.pettech.entrypoint.controller;
 
+import br.com.fiap.pettech.pettech.core.usecase.impl.BuscaFuncionarioPorIdUseCaseImpl;
 import br.com.fiap.pettech.pettech.dataprovider.repository.entity.Endereco;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -12,9 +13,9 @@ import java.util.Optional;
 @RequestMapping("/endereco")
 public class EmployeeController {
     @Autowired
-    private EmployeeUseCaseImpl employeeUseCaseImpl;
+    private BuscaFuncionarioPorIdUseCaseImpl funcionarioUseCaseImpl;
 
-    @GetMapping
+ /*   @GetMapping
     public List<Endereco> listarTodos() {
         return enderecoService.listAll();
     }
@@ -30,6 +31,6 @@ public class EmployeeController {
     public ResponseEntity<Endereco> inserir(@RequestBody Endereco obj) {
         return ResponseEntity.ok(enderecoService.save(obj));
     }
-
+*/
 
 }
