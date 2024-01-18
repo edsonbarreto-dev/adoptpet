@@ -1,4 +1,4 @@
-package br.com.fiap.pettech.pettech.repository;
+package br.com.fiap.pettech.pettech.dataprovider.repository;
 
 import br.com.fiap.pettech.pettech.entity.Familia;
 import br.com.fiap.pettech.pettech.entity.Ong;
