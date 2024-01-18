@@ -1,6 +1,6 @@
 package br.com.fiap.pettech.pettech.entity;
 
-import br.com.fiap.pettech.pettech.enums.AdocaoEnum;
+import br.com.fiap.pettech.pettech.core.shared.AdocaoEnum;
 
 import java.time.LocalDate;
 import java.util.List;
