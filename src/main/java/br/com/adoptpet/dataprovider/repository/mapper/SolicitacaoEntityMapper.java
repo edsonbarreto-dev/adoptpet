@@ -8,5 +8,5 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface SolicitacaoEntityMapper {
     SolicitacaoVO toSolicitacaoVO(SolicitacaoEntity solicitacaoEntity);
-    SolicitacaoEntity solicitacaoEntity(Solicitacao solicitacao);
+    SolicitacaoEntity toSolicitacaoEntity(Solicitacao solicitacao);
 }

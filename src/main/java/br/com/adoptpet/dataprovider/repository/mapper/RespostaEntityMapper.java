@@ -8,5 +8,5 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface RespostaEntityMapper {
     RespostaVO toRespostaVO(RespostaEntity respostaEntity);
-    RespostaEntity respostaEntity(Resposta resposta);
+    RespostaEntity toRespostaEntity(Resposta resposta);
 }
