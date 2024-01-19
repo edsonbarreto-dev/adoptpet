@@ -1,9 +1,10 @@
 package br.com.adoptpet.core.usecase.funcionario;
 
 import br.com.adoptpet.core.domain.funcionario.Funcionario;
+import br.com.adoptpet.core.domain.shared.Pessoa;
 
-public interface BuscaFuncionarioPorIdUseCase {
+public interface BuscaFuncionarioPorIdUseCase{
 
-    Funcionario find(final Long id);
+    Pessoa find(final Long id);
 
 }
