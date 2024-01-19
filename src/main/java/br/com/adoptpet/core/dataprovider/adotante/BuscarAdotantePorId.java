@@ -4,6 +4,6 @@ import br.com.adoptpet.core.domain.shared.Pessoa;
 
 import java.util.Optional;
 
-public interface BuscarAdotantePorId {
-    Optional<Pessoa> find(final Long id);
+public interface BuscarAdotantePorId<T> {
+   T find(final Long id);
 }

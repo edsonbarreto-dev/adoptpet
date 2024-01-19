@@ -1,9 +1,7 @@
 package br.com.adoptpet.core.domain.dataprovider.funcionario;
 
-import br.com.adoptpet.core.domain.funcionario.Funcionario;
+import br.com.adoptpet.core.domain.shared.Pessoa;
 
-import java.util.Optional;
-
-public interface BuscarFuncionarioPorId {
-    Optional<Funcionario> find(final Long id);
+public interface BuscarFuncionarioPorId<T> {
+    T find(final Long id);
 }
