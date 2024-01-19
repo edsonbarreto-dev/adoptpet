@@ -1,6 +1,6 @@
 package br.com.adoptpet.dataprovider;
 
-import br.com.adoptpet.core.domain.dataprovider.funcionario.BuscarFuncionarioPorId;
+import br.com.adoptpet.core.dataprovider.funcionario.BuscarFuncionarioPorId;
 import br.com.adoptpet.dataprovider.repository.FuncionarioRepository;
 import br.com.adoptpet.dataprovider.repository.entity.FuncionarioEntity;
 import br.com.adoptpet.dataprovider.repository.mapper.FuncionarioEntityMapper;

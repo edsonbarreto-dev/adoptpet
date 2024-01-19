@@ -7,6 +7,7 @@ import br.com.adoptpet.core.domain.shared.StatusSolicitacaoEnum;
 import java.time.LocalDate;
 
 public class Solicitacao {
+    private Long numeroSolicitacao;
     private Pet pet;
     private Pessoa solicitante;
     private Pessoa funcionario;
