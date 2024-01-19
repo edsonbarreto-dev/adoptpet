@@ -17,4 +17,12 @@ public class Resposta {
         this.dataResposta = dataResposta;
         this.observacao = observacao;
     }
+
+    public Long getNumeroResposta() {
+        return numeroResposta;
+    }
+
+    public void setNumeroResposta(Long numeroResposta) {
+        this.numeroResposta = numeroResposta;
+    }
 }

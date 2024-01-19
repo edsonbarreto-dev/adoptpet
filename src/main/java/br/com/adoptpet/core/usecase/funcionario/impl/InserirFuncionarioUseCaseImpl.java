@@ -6,12 +6,9 @@ import br.com.adoptpet.core.domain.funcionario.Funcionario;
 import br.com.adoptpet.core.usecase.funcionario.InserirFuncionarioUseCase;
 
 public class InserirFuncionarioUseCaseImpl implements InserirFuncionarioUseCase {
-
     private final BuscarCep buscarCep;
 
     private final InserirFuncionario inserirFuncionario;
-
-
 
     public InserirFuncionarioUseCaseImpl(
             BuscarCep buscarCep,

@@ -26,4 +26,12 @@ public class Solicitacao {
         this.solicitante = solicitante;
         this.dataSolicitacao = dataSolicitacao;
     }
+
+    public Long getNumeroSolicitacao() {
+        return numeroSolicitacao;
+    }
+
+    public void setNumeroSolicitacao(Long numeroSolicitacao) {
+        this.numeroSolicitacao = numeroSolicitacao;
+    }
 }
