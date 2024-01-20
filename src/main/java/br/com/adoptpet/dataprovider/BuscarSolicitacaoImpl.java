@@ -8,8 +8,6 @@ import br.com.adoptpet.dataprovider.repository.mapper.SolicitacaoEntityMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.Optional;
-
 @Component
 public class BuscarSolicitacaoImpl implements BuscarSolicitacao {
     @Autowired
@@ -20,12 +18,12 @@ public class BuscarSolicitacaoImpl implements BuscarSolicitacao {
     @Override
     public Solicitacao find(Solicitacao solicitacao) {
         SolicitacaoEntity entity = repository.findBySolicitacao(solicitacao);
-        return mapper.toSolicitacaoVO(entity);
+        return mapper.toSolicitacao(entity);
     }
 
     @Override
     public Solicitacao findByNumero(Long numero) {
         SolicitacaoEntity entity = repository.findByNumero(numero);
-        return mapper.toSolicitacaoVO(entity);
+        return mapper.toSolicitacao(entity);
     }
 }

@@ -1,6 +1,8 @@
 package br.com.adoptpet.core.usecase.funcionario;
 
-public interface ExcluirFuncionarioPorIdUseCase {
+import br.com.adoptpet.core.domain.funcionario.Funcionario;
 
-    void delete(final Long id);
+public interface ExcluirFuncionarioPorIdUseCase {
+    void deleteById(final Long id);
+    void delete(Funcionario funcionario);
 }

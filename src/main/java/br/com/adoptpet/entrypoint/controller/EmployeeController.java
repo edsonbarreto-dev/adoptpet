@@ -1,6 +1,6 @@
 package br.com.adoptpet.entrypoint.controller;
 
-import br.com.adoptpet.core.usecase.funcionario.impl.BuscaFuncionarioPorIdUseCaseImpl;
+import br.com.adoptpet.core.usecase.funcionario.impl.BuscaFuncionarioUseCaseImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/endereco")
 public class EmployeeController {
     @Autowired
-    private BuscaFuncionarioPorIdUseCaseImpl funcionarioUseCaseImpl;
+    private BuscaFuncionarioUseCaseImpl funcionarioUseCaseImpl;
 
  /*   @GetMapping
     public List<EnderecoEntity> listarTodos() {

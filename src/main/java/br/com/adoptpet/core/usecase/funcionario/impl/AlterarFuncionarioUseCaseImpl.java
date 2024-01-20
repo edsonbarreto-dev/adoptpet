@@ -2,18 +2,17 @@ package br.com.adoptpet.core.usecase.funcionario.impl;
 
 import br.com.adoptpet.core.dataprovider.funcionario.AlterarFuncionario;
 import br.com.adoptpet.core.dataprovider.BuscarEnderecoPorCep;
-import br.com.adoptpet.core.dataprovider.funcionario.BuscarFuncionarioPorId;
-import br.com.adoptpet.core.domain.shared.Pessoa;
+import br.com.adoptpet.core.dataprovider.funcionario.BuscarFuncionario;
+import br.com.adoptpet.core.domain.funcionario.Funcionario;
 import br.com.adoptpet.core.usecase.funcionario.AlterarFuncionarioUseCase;
-import br.com.adoptpet.dataprovider.BuscarFuncionarioPorIdImpl;
 
 public class AlterarFuncionarioUseCaseImpl implements AlterarFuncionarioUseCase {
-    private final BuscarFuncionarioPorId buscaFuncionarioPorId;
+    private final BuscarFuncionario buscaFuncionarioPorId;
     private final BuscarEnderecoPorCep buscarCep;
     private final AlterarFuncionario alterarFuncionario;
 
     public AlterarFuncionarioUseCaseImpl(
-            BuscarFuncionarioPorId buscaFuncionarioPorId,
+            BuscarFuncionario buscaFuncionarioPorId,
             BuscarEnderecoPorCep buscarCep,
             AlterarFuncionario alterarFuncionario
     ) {
@@ -23,8 +22,8 @@ public class AlterarFuncionarioUseCaseImpl implements AlterarFuncionarioUseCase 
     }
 
     @Override
-    public void update(Pessoa funcionario, String cep) {
-        buscaFuncionarioPorId.find(funcionario.getId());
+    public void update(Funcionario funcionario, String cep) {
+        buscaFuncionarioPorId.findBy(funcionario);
         var endereco = buscarCep.find(cep);
         funcionario.setEndereco(endereco);
         alterarFuncionario.update(funcionario);

@@ -1,7 +1,8 @@
 package br.com.adoptpet.core.dataprovider.funcionario;
 
-import br.com.adoptpet.core.domain.shared.Pessoa;
+
+import br.com.adoptpet.core.domain.funcionario.Funcionario;
 
 public interface AlterarFuncionario {
-    void update(Pessoa funcionario);
+    void update(Funcionario funcionario);
 }

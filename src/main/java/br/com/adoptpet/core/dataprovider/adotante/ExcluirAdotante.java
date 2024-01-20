@@ -1,5 +1,5 @@
 package br.com.adoptpet.core.dataprovider.adotante;
 
-public interface ExcluirAdotantePorId {
+public interface ExcluirAdotante {
     void delete(final Long id);
 }

@@ -5,7 +5,6 @@ import br.com.adoptpet.core.dataprovider.adotante.InserirAdotante;
 import br.com.adoptpet.core.domain.adotante.Adotante;
 import br.com.adoptpet.core.usecase.adotante.BuscarAdotantePorIdUseCase;
 import br.com.adoptpet.core.usecase.adotante.InserirAdotanteUseCase;
-import br.com.adoptpet.dataprovider.BuscarEnderecoPorCepImpl;
 
 public class InserirAdotanteUseCaseImpl implements InserirAdotanteUseCase {
     private final BuscarAdotantePorIdUseCase buscaAdotantePorIdUseCase;
@@ -25,7 +24,7 @@ public class InserirAdotanteUseCaseImpl implements InserirAdotanteUseCase {
     }
 
     @Override
-    public void insert(Adotante adotante, String cep) {
+    public void insert(Adotante adotante, String cep) throws Exception {
         var endereco = buscarEnderecoPorCep.find(cep);
         adotante.setEndereco(endereco);
         buscaAdotantePorIdUseCase.findById(adotante.getId());

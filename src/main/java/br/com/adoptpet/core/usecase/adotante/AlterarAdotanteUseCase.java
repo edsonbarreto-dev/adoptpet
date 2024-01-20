@@ -1,8 +1,8 @@
 package br.com.adoptpet.core.usecase.adotante;
 
-import br.com.adoptpet.core.domain.shared.Pessoa;
+import br.com.adoptpet.core.domain.adotante.Adotante;
 
 public interface AlterarAdotanteUseCase {
 
-    void update(Pessoa adotante, String cep);
+    void update(Adotante adotante, String cep) throws Exception;
 }

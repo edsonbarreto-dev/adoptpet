@@ -22,4 +22,10 @@ public class ExcluirRespostaImpl implements ExcluirResposta {
         RespostaEntity respostaEntity = respostaEntityMapper.toRespostaEntity(resposta);
         respostaRepository.delete(respostaEntity);
     }
+
+    @Override
+    public void deleteByNumero(Long numero) {
+        RespostaEntity entity = respostaRepository.findByNumero(numero);
+        respostaRepository.delete(entity);
+    }
 }

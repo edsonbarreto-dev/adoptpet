@@ -2,7 +2,7 @@ package br.com.adoptpet.core.usecase.adotante.impl;
 
 import br.com.adoptpet.core.dataprovider.BuscarEnderecoPorCep;
 import br.com.adoptpet.core.dataprovider.adotante.AlterarAdotante;
-import br.com.adoptpet.core.domain.shared.Pessoa;
+import br.com.adoptpet.core.domain.adotante.Adotante;
 import br.com.adoptpet.core.usecase.adotante.AlterarAdotanteUseCase;
 import br.com.adoptpet.core.usecase.adotante.BuscarAdotantePorIdUseCase;
 
@@ -24,7 +24,7 @@ public class AlterarAdotanteUseCaseImpl implements AlterarAdotanteUseCase {
     }
 
     @Override
-    public void update(Pessoa adotante, String cep) {
+    public void update(Adotante adotante, String cep) throws Exception {
         buscaAdotantePorIdUseCase.findById(adotante.getId());
         var endereco = buscarCep.find(cep);
         adotante.setEndereco(endereco);

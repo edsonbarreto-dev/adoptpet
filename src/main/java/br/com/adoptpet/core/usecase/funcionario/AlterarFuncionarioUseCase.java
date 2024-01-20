@@ -1,8 +1,8 @@
 package br.com.adoptpet.core.usecase.funcionario;
 
-import br.com.adoptpet.core.domain.shared.Pessoa;
+import br.com.adoptpet.core.domain.funcionario.Funcionario;
 
 public interface AlterarFuncionarioUseCase {
 
-    void update(Pessoa funcionario, String cep);
+    void update(Funcionario funcionario, String cep);
 }

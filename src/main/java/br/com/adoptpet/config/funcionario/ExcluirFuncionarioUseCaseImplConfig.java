@@ -1,10 +1,8 @@
 package br.com.adoptpet.config.funcionario;
 
-import br.com.adoptpet.core.usecase.funcionario.impl.ExcluirFuncionarioPorIdUseCaseImpl;
 import br.com.adoptpet.core.usecase.funcionario.impl.ExcluirFuncionarioUseCaseImpl;
-import br.com.adoptpet.dataprovider.BuscarFuncionarioPorIdImpl;
+import br.com.adoptpet.dataprovider.BuscarFuncionarioImpl;
 import br.com.adoptpet.dataprovider.ExcluirFuncionarioImpl;
-import br.com.adoptpet.dataprovider.ExcluirFuncionarioPorIdImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,8 +11,9 @@ public class ExcluirFuncionarioUseCaseImplConfig {
 
     @Bean
     public ExcluirFuncionarioUseCaseImpl excluirFuncionarioPorIdUseCase(
-            ExcluirFuncionarioImpl excluirFuncionario
+            ExcluirFuncionarioImpl excluirFuncionario,
+            BuscarFuncionarioImpl buscarFuncionario
     ) {
-        return new ExcluirFuncionarioUseCaseImpl(excluirFuncionario);
+        return new ExcluirFuncionarioUseCaseImpl(buscarFuncionario, excluirFuncionario);
     }
 }

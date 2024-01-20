@@ -21,6 +21,8 @@ public class Funcionario extends Pessoa {
         this.CPF = CPF;
     }
 
+    public Funcionario() {}
+
     public String getCPF() {
         return CPF;
     }

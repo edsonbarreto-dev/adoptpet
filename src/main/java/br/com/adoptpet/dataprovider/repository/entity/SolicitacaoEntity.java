@@ -37,4 +37,52 @@ public class SolicitacaoEntity {
     }
 
     public SolicitacaoEntity(){}
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public PetEntity getPet() {
+        return pet;
+    }
+
+    public void setPet(PetEntity pet) {
+        this.pet = pet;
+    }
+
+    public PessoaEntity getSolicitante() {
+        return solicitante;
+    }
+
+    public void setSolicitante(PessoaEntity solicitante) {
+        this.solicitante = solicitante;
+    }
+
+    public PessoaEntity getFuncionario() {
+        return funcionario;
+    }
+
+    public void setFuncionario(PessoaEntity funcionario) {
+        this.funcionario = funcionario;
+    }
+
+    public LocalDate getDataSolicitacao() {
+        return dataSolicitacao;
+    }
+
+    public void setDataSolicitacao(LocalDate dataSolicitacao) {
+        this.dataSolicitacao = dataSolicitacao;
+    }
+
+    public StatusSolicitacaoEnum getStatusSolicitacao() {
+        return statusSolicitacao;
+    }
+
+    public void setStatusSolicitacao(StatusSolicitacaoEnum statusSolicitacao) {
+        this.statusSolicitacao = statusSolicitacao;
+    }
 }

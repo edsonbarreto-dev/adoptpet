@@ -5,14 +5,14 @@ import org.springframework.context.annotation.Configuration;
 
 import br.com.adoptpet.dataprovider.AlterarFuncionarioImpl;
 import br.com.adoptpet.dataprovider.BuscarEnderecoPorCepImpl;
-import br.com.adoptpet.dataprovider.BuscarFuncionarioPorIdImpl;
+import br.com.adoptpet.dataprovider.BuscarFuncionarioImpl;
 import br.com.adoptpet.core.usecase.funcionario.impl.AlterarFuncionarioUseCaseImpl;
 
 @Configuration
 public class AlterarFuncionarioUseCaseImplConfig {
     @Bean
     public AlterarFuncionarioUseCaseImpl alterarFuncionarioUseCase(
-            BuscarFuncionarioPorIdImpl buscarFuncionarioPorId,
+            BuscarFuncionarioImpl buscarFuncionarioPorId,
             BuscarEnderecoPorCepImpl buscarCep,
             AlterarFuncionarioImpl alterarFuncionario
     ) {
