@@ -1,6 +1,6 @@
-package br.com.adoptpet.core.usecase.solicitacao.impl;
+package br.com.adoptpet.core.usecase.resposta.impl;
 
-import br.com.adoptpet.core.usecase.solicitacao.ExcluirRespostaPorNumeroUseCase;
+import br.com.adoptpet.core.usecase.resposta.ExcluirRespostaPorNumeroUseCase;
 import br.com.adoptpet.dataprovider.BuscarRespostaPorNumeroImpl;
 import br.com.adoptpet.dataprovider.repository.vo.RespostaVO;
 

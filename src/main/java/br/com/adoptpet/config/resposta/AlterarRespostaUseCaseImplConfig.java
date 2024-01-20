@@ -1,4 +1,4 @@
-package br.com.adoptpet.config.solicitacao;
+package br.com.adoptpet.config.resposta;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

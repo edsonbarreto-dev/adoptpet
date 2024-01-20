@@ -1,9 +1,9 @@
-package br.com.adoptpet.core.usecase.solicitacao.impl;
+package br.com.adoptpet.core.usecase.resposta.impl;
 
 import br.com.adoptpet.core.dataprovider.solicitacao.AlterarResposta;
 import br.com.adoptpet.core.domain.solicitacao.Resposta;
-import br.com.adoptpet.core.usecase.solicitacao.AlterarRespostaUseCase;
-import br.com.adoptpet.core.usecase.solicitacao.BuscarRespostaPorNumeroUseCase;
+import br.com.adoptpet.core.usecase.resposta.AlterarRespostaUseCase;
+import br.com.adoptpet.core.usecase.resposta.BuscarRespostaPorNumeroUseCase;
 
 public class AlterarRespostaUseCaseImpl implements AlterarRespostaUseCase {
     private final BuscarRespostaPorNumeroUseCase buscarRespostaPorNumeroUseCase;
