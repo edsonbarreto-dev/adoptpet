@@ -8,12 +8,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class ExcluirFuncionarioConfig {
-
+public class ExcluirFuncionarioPorIdUseCaseImplConfig {
     @Bean
     public ExcluirFuncionarioPorIdUseCaseImpl excluirFuncionarioPorIdUseCase(
             BuscarFuncionarioPorIdImpl buscarFuncionarioPorId,
-            ExcluirFuncionarioPorIdImpl excluirFuncionarioPorId) {
-        return new ExcluirFuncionarioPorIdUseCaseImpl((BuscaFuncionarioPorIdUseCase) buscarFuncionarioPorId, excluirFuncionarioPorId);
+            ExcluirFuncionarioPorIdImpl excluirFuncionarioPorId
+    ) {
+        return new ExcluirFuncionarioPorIdUseCaseImpl(buscarFuncionarioPorId, excluirFuncionarioPorId);
     }
 }
