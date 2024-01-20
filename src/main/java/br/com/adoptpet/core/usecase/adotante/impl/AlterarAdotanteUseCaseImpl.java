@@ -1,6 +1,6 @@
 package br.com.adoptpet.core.usecase.adotante.impl;
 
-import br.com.adoptpet.core.dataprovider.BuscarCep;
+import br.com.adoptpet.core.dataprovider.BuscarEnderecoPorCep;
 import br.com.adoptpet.core.dataprovider.adotante.AlterarAdotante;
 import br.com.adoptpet.core.domain.shared.Pessoa;
 import br.com.adoptpet.core.usecase.adotante.AlterarAdotanteUseCase;
@@ -9,13 +9,13 @@ import br.com.adoptpet.core.usecase.adotante.BuscarAdotantePorIdUseCase;
 public class AlterarAdotanteUseCaseImpl implements AlterarAdotanteUseCase {
     private final BuscarAdotantePorIdUseCase buscaAdotantePorIdUseCase;
 
-    private final BuscarCep buscarCep;
+    private final BuscarEnderecoPorCep buscarCep;
 
     private final AlterarAdotante alterarAdotante;
 
     public AlterarAdotanteUseCaseImpl(
             BuscarAdotantePorIdUseCase buscaAdotantePorIdUseCase,
-            BuscarCep buscarCep,
+            BuscarEnderecoPorCep buscarCep,
             AlterarAdotante alterarAdotante
     ) {
         this.buscaAdotantePorIdUseCase = buscaAdotantePorIdUseCase;

@@ -1,22 +1,24 @@
 package br.com.adoptpet.core.usecase.solicitacao.impl;
 
-import br.com.adoptpet.core.dataprovider.solicitacao.BuscarRespostaPorNumero;
-import br.com.adoptpet.core.domain.solicitacao.Resposta;
 import br.com.adoptpet.core.usecase.solicitacao.ExcluirRespostaPorNumeroUseCase;
+import br.com.adoptpet.dataprovider.BuscarRespostaPorNumeroImpl;
+import br.com.adoptpet.dataprovider.repository.vo.RespostaVO;
 
 public class ExcluirRespostaPorNumeroUseCaseImpl implements ExcluirRespostaPorNumeroUseCase {
-    private final BuscarRespostaPorNumero buscarRespostaPorNumero;
-    private final ExcluirRespostaPorNumeroUseCase excluirRespostaPorNumeroUseCase;
+    private final BuscarRespostaPorNumeroImpl buscarRespostaPorNumero;
+    private final ExcluirRespostaPorNumeroUseCaseImpl excluirRespostaPorNumeroUseCase;
 
-    public ExcluirRespostaPorNumeroUseCaseImpl(BuscarRespostaPorNumero buscarRespostaPorNumero, ExcluirRespostaPorNumeroUseCase excluirRespostaPorNumeroUseCase) {
+    public ExcluirRespostaPorNumeroUseCaseImpl(
+            BuscarRespostaPorNumeroImpl buscarRespostaPorNumero,
+            ExcluirRespostaPorNumeroUseCaseImpl excluirRespostaPorNumeroUseCase
+    ) {
         this.buscarRespostaPorNumero = buscarRespostaPorNumero;
         this.excluirRespostaPorNumeroUseCase = excluirRespostaPorNumeroUseCase;
     }
+
     @Override
     public void delete(Long numero) {
-        Resposta resposta = buscarRespostaPorNumero.find(numero);
+        RespostaVO resposta = buscarRespostaPorNumero.findById(numero);
         excluirRespostaPorNumeroUseCase.delete(resposta.getNumeroResposta());
-
-
     }
 }

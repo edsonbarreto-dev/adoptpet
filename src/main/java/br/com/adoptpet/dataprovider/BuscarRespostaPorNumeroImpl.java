@@ -16,7 +16,7 @@ public class BuscarRespostaPorNumeroImpl implements BuscarRespostaPorNumero<Resp
     @Autowired
     private RespostaEntityMapper respostaEntityMapper;
     @Override
-    public RespostaVO find(Long id) {
+    public RespostaVO findById(Long id) {
         RespostaEntity respostaEntity = respostaRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Resposta não encontrada"));
 

@@ -1,9 +1,7 @@
 package br.com.adoptpet.core.dataprovider.adotante;
 
-import br.com.adoptpet.core.domain.shared.Pessoa;
+import br.com.adoptpet.core.domain.adotante.Adotante;
 
-import java.util.Optional;
-
-public interface BuscarAdotantePorId<T> {
-   T find(final Long id);
+public interface BuscarAdotantePorId {
+   Adotante findById(final Long id);
 }

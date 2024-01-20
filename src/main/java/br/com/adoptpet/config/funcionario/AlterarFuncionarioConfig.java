@@ -16,7 +16,6 @@ public class AlterarFuncionarioConfig {
             BuscarEnderecoPorCepImpl buscarCep,
             AlterarFuncionarioImpl alterarFuncionario
     ) {
-        return new AlterarFuncionarioUseCaseImpl
-                ((BuscaFuncionarioPorIdUseCase) buscarFuncionarioPorId, buscarCep, alterarFuncionario);
+        return new AlterarFuncionarioUseCaseImpl(buscarFuncionarioPorId, buscarCep, alterarFuncionario);
     }
 }

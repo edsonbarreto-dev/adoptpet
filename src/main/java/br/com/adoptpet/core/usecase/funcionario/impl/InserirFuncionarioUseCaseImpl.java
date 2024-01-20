@@ -1,17 +1,17 @@
 package br.com.adoptpet.core.usecase.funcionario.impl;
 
-import br.com.adoptpet.core.dataprovider.BuscarCep;
+import br.com.adoptpet.core.dataprovider.BuscarEnderecoPorCep;
 import br.com.adoptpet.core.dataprovider.funcionario.InserirFuncionario;
 import br.com.adoptpet.core.domain.funcionario.Funcionario;
 import br.com.adoptpet.core.usecase.funcionario.InserirFuncionarioUseCase;
 
 public class InserirFuncionarioUseCaseImpl implements InserirFuncionarioUseCase {
-    private final BuscarCep buscarCep;
+    private final BuscarEnderecoPorCep buscarCep;
 
     private final InserirFuncionario inserirFuncionario;
 
     public InserirFuncionarioUseCaseImpl(
-            BuscarCep buscarCep,
+            BuscarEnderecoPorCep buscarCep,
             InserirFuncionario inserirFuncionario
     ) {
 

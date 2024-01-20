@@ -1,15 +1,15 @@
 package br.com.adoptpet.core.usecase.ong.impl;
 
-import br.com.adoptpet.core.dataprovider.BuscarCep;
+import br.com.adoptpet.core.dataprovider.BuscarEnderecoPorCep;
 import br.com.adoptpet.core.dataprovider.ong.InserirOng;
 import br.com.adoptpet.core.domain.ong.Ong;
 import br.com.adoptpet.core.usecase.ong.InserirOngUseCase;
 
 public class InserirOngUseCaseImpl implements InserirOngUseCase {
     private final InserirOng inserirOng;
-    private final BuscarCep buscarCep;
+    private final BuscarEnderecoPorCep buscarCep;
 
-    public InserirOngUseCaseImpl(InserirOng inserirOng, BuscarCep buscarCep) {
+    public InserirOngUseCaseImpl(InserirOng inserirOng, BuscarEnderecoPorCep buscarCep) {
         this.inserirOng = inserirOng;
         this.buscarCep = buscarCep;
     }

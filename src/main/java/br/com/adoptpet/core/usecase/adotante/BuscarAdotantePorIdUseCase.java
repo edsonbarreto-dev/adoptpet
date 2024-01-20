@@ -1,9 +1,9 @@
 package br.com.adoptpet.core.usecase.adotante;
 
-import br.com.adoptpet.core.domain.shared.Pessoa;
+import br.com.adoptpet.core.domain.adotante.Adotante;
 
 public interface BuscarAdotantePorIdUseCase {
 
-    Pessoa findById(final Long id);
+    Adotante findById(final Long id);
 
 }

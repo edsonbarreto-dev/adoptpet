@@ -12,7 +12,7 @@ public class BuscarSolicitacaoPorNumeroUseCaseImpl implements BuscarSolicitacaoP
     }
 
     @Override
-    public SolicitacaoVO find(Long numero) {
+    public SolicitacaoVO findByNumero(Long numero) {
         return (SolicitacaoVO) buscarSolicitacaoPorNumero.find(numero);
     }
 }
