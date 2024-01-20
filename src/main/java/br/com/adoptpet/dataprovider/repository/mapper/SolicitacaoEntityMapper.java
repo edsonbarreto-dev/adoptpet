@@ -8,5 +8,5 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring")
 public interface SolicitacaoEntityMapper {
     SolicitacaoVO toSolicitacaoVO(SolicitacaoEntity solicitacaoEntity);
-    SolicitacaoEntity toSolicitacaoEntity(SolicitacaoVO solicitacaoVO);
+    SolicitacaoEntity toSolicitacaoEntity(Solicitacao solicitacao);
 }

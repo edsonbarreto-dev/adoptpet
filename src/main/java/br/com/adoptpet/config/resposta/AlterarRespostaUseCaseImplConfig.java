@@ -10,7 +10,7 @@ import br.com.adoptpet.core.usecase.resposta.impl.AlterarRespostaUseCaseImpl;
 public class AlterarRespostaUseCaseImplConfig {
 
     @Bean
-    public AlterarRespostaUseCaseImpl alterarSolicitacaoUseCase(
+    public AlterarRespostaUseCaseImpl alterarRespostaUseCaseImpl(
             AlterarRespostaImpl alterarRespostaImpl
     ) {
         return new AlterarRespostaUseCaseImpl(alterarRespostaImpl);
