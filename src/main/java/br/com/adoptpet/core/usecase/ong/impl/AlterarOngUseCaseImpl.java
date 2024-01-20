@@ -16,7 +16,7 @@ public class AlterarOngUseCaseImpl implements AlterarOngUseCase {
 
     @Override
     public void update(Ong ong) {
-        buscarOngPorIdUseCase.find(ong.getId());
+        buscarOngPorIdUseCase.findById(ong.getId());
         alterarOng.update(ong);
 
     }

@@ -13,11 +13,7 @@ public class BuscarOngUseCaseImpl implements BuscarOngPorIdUseCase {
     }
 
     @Override
-    public Pessoa find(Long id) {
-        Pessoa ong = buscarPorId.find(id);
-        if (ong == null) {
-            throw new RuntimeException("ONG não encontrada");
-        }
-        return ong;
+    public Pessoa findById(Long id) {
+        return buscarPorId.findById(id);
     }
 }

@@ -25,7 +25,7 @@ public class AlterarAdotanteUseCaseImpl implements AlterarAdotanteUseCase {
 
     @Override
     public void update(Pessoa adotante, String cep) {
-        buscaAdotantePorIdUseCase.find(adotante.getId());
+        buscaAdotantePorIdUseCase.findById(adotante.getId());
         var endereco = buscarCep.find(cep);
         adotante.setEndereco(endereco);
         alterarAdotante.update(adotante);

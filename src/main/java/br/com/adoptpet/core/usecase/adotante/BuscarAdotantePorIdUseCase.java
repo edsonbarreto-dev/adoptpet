@@ -4,6 +4,6 @@ import br.com.adoptpet.core.domain.shared.Pessoa;
 
 public interface BuscarAdotantePorIdUseCase {
 
-    Pessoa find(final Long id);
+    Pessoa findById(final Long id);
 
 }

@@ -14,13 +14,6 @@ public class BuscaFuncionarioPorIdUseCaseImpl implements BuscaFuncionarioPorIdUs
 
     @Override
     public Pessoa find(Long id) {
-
-        Pessoa funcionario = buscarFuncionarioPorId.find(id);
-        if (funcionario == null) {
-            throw new RuntimeException("Funcionário não encontrado");
-        }
-        return funcionario;
-       // return buscarFuncionarioPorId.find(id)
-       //         .orElseThrow(() -> new RuntimeException("Funcionário não encontrado"));
+        return buscarFuncionarioPorId.findById(id);
     }
 }

@@ -1,22 +1,20 @@
 package br.com.adoptpet.config.ong;
 
-import br.com.adoptpet.core.usecase.funcionario.impl.InserirFuncionarioUseCaseImpl;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
 import br.com.adoptpet.core.usecase.ong.impl.InserirOngUseCaseImpl;
 import br.com.adoptpet.dataprovider.BuscarEnderecoPorCepImpl;
 import br.com.adoptpet.dataprovider.InserirOngImpl;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class InserirOngConfig {
      @Bean
-        public InserirOngUseCaseImpl inserirOngUseCaseImpl(
-             BuscarEnderecoPorCepImpl buscarCep,
-             InserirOngImpl inserirOng
+    public InserirOngUseCaseImpl inserirOngUseCaseImpl(
+         InserirOngImpl inserirOngImpl,
+         BuscarEnderecoPorCepImpl buscarEnderecoPorCepImpl
 
-        ) {
-            return new InserirFuncionarioUseCaseImpl
-                    (buscarCep, inserirOng);
-        }
-
+    ) {
+        return new InserirOngUseCaseImpl(inserirOngImpl, buscarEnderecoPorCepImpl);
     }
+}
