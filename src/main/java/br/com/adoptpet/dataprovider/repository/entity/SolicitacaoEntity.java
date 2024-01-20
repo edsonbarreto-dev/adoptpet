@@ -35,4 +35,6 @@ public class SolicitacaoEntity {
         this.solicitante = solicitante;
          this.dataSolicitacao = dataSolicitacao;
     }
+
+    public SolicitacaoEntity(){}
 }

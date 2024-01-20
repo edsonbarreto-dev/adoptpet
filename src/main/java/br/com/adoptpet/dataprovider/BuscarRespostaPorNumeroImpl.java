@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class BuscarRespostaPorNumeroImpl implements BuscarRespostaPorNumero<RespostaVO> {
+public class BuscarRespostaPorNumeroImpl implements BuscarResposta<RespostaVO> {
     @Autowired
     private RespostaRepository respostaRepository;
     @Autowired
