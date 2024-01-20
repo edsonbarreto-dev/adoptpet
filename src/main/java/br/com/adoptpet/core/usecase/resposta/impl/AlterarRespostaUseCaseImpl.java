@@ -1,22 +1,18 @@
 package br.com.adoptpet.core.usecase.resposta.impl;
 
-import br.com.adoptpet.core.dataprovider.solicitacao.AlterarResposta;
-import br.com.adoptpet.core.domain.solicitacao.Resposta;
+import br.com.adoptpet.core.dataprovider.resposta.AlterarResposta;
+import br.com.adoptpet.core.domain.resposta.Resposta;
 import br.com.adoptpet.core.usecase.resposta.AlterarRespostaUseCase;
-import br.com.adoptpet.core.usecase.resposta.BuscarRespostaPorNumeroUseCase;
 
 public class AlterarRespostaUseCaseImpl implements AlterarRespostaUseCase {
-    private final BuscarRespostaPorNumeroUseCase buscarRespostaPorNumeroUseCase;
     private final AlterarResposta alterarResposta;
 
-    public AlterarRespostaUseCaseImpl(BuscarRespostaPorNumeroUseCase buscarRespostaPorNumeroUseCase, AlterarResposta alterarResposta) {
-        this.buscarRespostaPorNumeroUseCase = buscarRespostaPorNumeroUseCase;
+    public AlterarRespostaUseCaseImpl(AlterarResposta alterarResposta) {
         this.alterarResposta = alterarResposta;
     }
 
     @Override
     public void update(Resposta resposta) {
-        buscarRespostaPorNumeroUseCase.find(resposta.getNumeroResposta());
         alterarResposta.update(resposta);
     }
 }

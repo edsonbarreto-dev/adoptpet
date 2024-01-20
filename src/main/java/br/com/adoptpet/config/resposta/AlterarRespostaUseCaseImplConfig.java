@@ -3,16 +3,16 @@ package br.com.adoptpet.config.resposta;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import br.com.adoptpet.dataprovider.AlterarSolicitacaoImpl;
-import br.com.adoptpet.core.usecase.solicitacao.impl.AlterarSolicitacaoUseCaseImpl;
+import br.com.adoptpet.dataprovider.AlterarRespostaImpl;
+import br.com.adoptpet.core.usecase.resposta.impl.AlterarRespostaUseCaseImpl;
 
 @Configuration
 public class AlterarRespostaUseCaseImplConfig {
 
     @Bean
-    public AlterarSolicitacaoUseCaseImpl alterarSolicitacaoUseCase(
-            AlterarSolicitacaoImpl alterarSolicitacao
+    public AlterarRespostaUseCaseImpl alterarSolicitacaoUseCase(
+            AlterarRespostaImpl alterarRespostaImpl
     ) {
-        return new AlterarSolicitacaoUseCaseImpl(alterarSolicitacao);
+        return new AlterarRespostaUseCaseImpl(alterarRespostaImpl);
     }
 }

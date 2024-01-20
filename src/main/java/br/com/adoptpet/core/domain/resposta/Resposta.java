@@ -1,6 +1,7 @@
-package br.com.adoptpet.core.domain.solicitacao;
+package br.com.adoptpet.core.domain.resposta;
 
 import br.com.adoptpet.core.domain.shared.StatusSolicitacaoEnum;
+import br.com.adoptpet.core.domain.solicitacao.Solicitacao;
 
 import java.time.LocalDate;
 
@@ -11,7 +12,8 @@ public class Resposta {
     private LocalDate dataResposta = LocalDate.now();
     private String observacao;
 
-    public Resposta(Solicitacao solicitacao, StatusSolicitacaoEnum resposta, LocalDate dataResposta, String observacao) {
+    public Resposta(Long numeroResposta, Solicitacao solicitacao, StatusSolicitacaoEnum resposta, LocalDate dataResposta, String observacao) {
+        this.numeroResposta = numeroResposta;
         this.solicitacao = solicitacao;
         this.resposta = resposta;
         this.dataResposta = dataResposta;
@@ -22,7 +24,19 @@ public class Resposta {
         return numeroResposta;
     }
 
-    public void setNumeroResposta(Long numeroResposta) {
-        this.numeroResposta = numeroResposta;
+    public Solicitacao getSolicitacao() {
+        return solicitacao;
+    }
+
+    public StatusSolicitacaoEnum getResposta() {
+        return resposta;
+    }
+
+    public LocalDate getDataResposta() {
+        return dataResposta;
+    }
+
+    public String getObservacao() {
+        return observacao;
     }
 }

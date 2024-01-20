@@ -1,23 +1,25 @@
 package br.com.adoptpet.dataprovider;
 
+import br.com.adoptpet.core.dataprovider.resposta.ExcluirResposta;
+import br.com.adoptpet.core.domain.resposta.Resposta;
 import br.com.adoptpet.dataprovider.repository.RespostaRepository;
 import br.com.adoptpet.dataprovider.repository.entity.RespostaEntity;
 import br.com.adoptpet.dataprovider.repository.mapper.RespostaEntityMapper;
-import br.com.adoptpet.dataprovider.repository.vo.RespostaVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class BuscarRespostaPorNumeroImpl implements BuscarRespostaPorNumero<RespostaVO> {
+public class ExcluirRespostaImpl implements ExcluirResposta {
+
     @Autowired
     private RespostaRepository respostaRepository;
+
     @Autowired
     private RespostaEntityMapper respostaEntityMapper;
-    @Override
-    public RespostaVO findById(Long id) {
-        RespostaEntity respostaEntity = respostaRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Resposta não encontrada"));
 
-        return respostaEntityMapper.toRespostaVO(respostaEntity);
+    @Override
+    public void delete(Resposta resposta) {
+        RespostaEntity respostaEntity = respostaEntityMapper.toRespostaEntity(resposta);
+        respostaRepository.delete(respostaEntity);
     }
 }

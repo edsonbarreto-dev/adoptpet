@@ -1,7 +1,7 @@
-package br.com.adoptpet.core.usecase.resposta;
+package br.com.adoptpet.core.dataprovider.resposta;
 
 import br.com.adoptpet.core.domain.resposta.Resposta;
 
-public interface InserirRespostaUseCase {
+public interface InserirResposta {
     void insert(Resposta resposta);
 }
