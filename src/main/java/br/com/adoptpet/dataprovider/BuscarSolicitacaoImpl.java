@@ -5,7 +5,6 @@ import br.com.adoptpet.core.domain.solicitacao.Solicitacao;
 import br.com.adoptpet.dataprovider.repository.SolicitacaoRepository;
 import br.com.adoptpet.dataprovider.repository.entity.SolicitacaoEntity;
 import br.com.adoptpet.dataprovider.repository.mapper.SolicitacaoEntityMapper;
-import br.com.adoptpet.dataprovider.repository.vo.SolicitacaoVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -20,11 +19,13 @@ public class BuscarSolicitacaoImpl implements BuscarSolicitacao {
 
     @Override
     public Solicitacao find(Solicitacao solicitacao) {
-        repository.findBy(solicitacao);
+        SolicitacaoEntity entity = repository.findBySolicitacao(solicitacao);
+        return mapper.toSolicitacaoVO(entity);
     }
 
     @Override
     public Solicitacao findByNumero(Long numero) {
-        return repository.findByNumero(numero);
+        SolicitacaoEntity entity = repository.findByNumero(numero);
+        return mapper.toSolicitacaoVO(entity);
     }
 }

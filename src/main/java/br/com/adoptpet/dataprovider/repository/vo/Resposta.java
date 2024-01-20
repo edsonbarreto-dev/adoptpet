@@ -7,7 +7,7 @@ import lombok.Data;
 import java.time.LocalDate;
 
 @Data
-public class RespostaVO {
+public class Resposta {
     private Long numeroResposta;
     private Solicitacao solicitacao;
     private StatusSolicitacaoEnum resposta;
