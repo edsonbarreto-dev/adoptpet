@@ -8,12 +8,11 @@ import br.com.adoptpet.dataprovider.BuscarEnderecoPorCepImpl;
 import br.com.adoptpet.dataprovider.InserirOngImpl;
 
 @Configuration
-public class InserirOngConfig {
+public class InserirOngUseCaseImplConfig {
      @Bean
     public InserirOngUseCaseImpl inserirOngUseCaseImpl(
          InserirOngImpl inserirOngImpl,
          BuscarEnderecoPorCepImpl buscarEnderecoPorCepImpl
-
     ) {
         return new InserirOngUseCaseImpl(inserirOngImpl, buscarEnderecoPorCepImpl);
     }

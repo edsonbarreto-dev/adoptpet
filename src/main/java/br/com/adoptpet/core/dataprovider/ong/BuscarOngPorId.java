@@ -1,5 +1,7 @@
 package br.com.adoptpet.core.dataprovider.ong;
 
-public interface BuscarOngPorId<T> {
-    T find(final Long id);
+import br.com.adoptpet.core.domain.ong.Ong;
+
+public interface BuscarOngPorId {
+    Ong find(final Long id);
 }

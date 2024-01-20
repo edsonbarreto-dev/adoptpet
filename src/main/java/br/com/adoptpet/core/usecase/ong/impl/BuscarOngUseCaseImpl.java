@@ -1,19 +1,18 @@
 package br.com.adoptpet.core.usecase.ong.impl;
 
-import br.com.adoptpet.core.dataprovider.shared.BuscarPorId;
+import br.com.adoptpet.core.dataprovider.ong.BuscarOngPorId;
 import br.com.adoptpet.core.domain.ong.Ong;
-import br.com.adoptpet.core.domain.shared.Pessoa;
 import br.com.adoptpet.core.usecase.ong.BuscarOngPorIdUseCase;
 
 public class BuscarOngUseCaseImpl implements BuscarOngPorIdUseCase {
-    private final BuscarPorId<Ong> buscarPorId;
+    private final BuscarOngPorId buscarOngPorId;
 
-    public BuscarOngUseCaseImpl(BuscarPorId<Ong> buscarPorId) {
-        this.buscarPorId = buscarPorId;
+    public BuscarOngUseCaseImpl(BuscarOngPorId BuscarOngPorId) {
+        this.buscarOngPorId = BuscarOngPorId;
     }
 
     @Override
-    public Pessoa findById(Long id) {
-        return buscarPorId.findById(id);
+    public Ong findById(Long id) {
+        return buscarOngPorId.find(id);
     }
 }
