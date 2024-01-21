@@ -1,6 +1,6 @@
 package br.com.adoptpet.config.solicitacao;
 
-import br.com.adoptpet.core.usecase.solicitacao.impl.ExcluirSolicitacaoUseCaseImpl;
+import br.com.adoptpet.core.usecase.solicitacao_adocao.impl.ExcluirSolicitacaoAdocaoUseCaseImpl;
 import br.com.adoptpet.dataprovider.ExcluirSolicitacaoImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,9 +9,9 @@ import org.springframework.context.annotation.Configuration;
 public class ExcluirSolicitacaoUseCaseImplConfig {
 
     @Bean
-    public ExcluirSolicitacaoUseCaseImpl alterarSolicitacaoUseCase(
+    public ExcluirSolicitacaoAdocaoUseCaseImpl excluirSolicitacaoAdocaoUseCaseImpl(
             ExcluirSolicitacaoImpl excluirSolicitacaoImpl
     ) {
-        return new ExcluirSolicitacaoUseCaseImpl(excluirSolicitacaoImpl);
+        return new ExcluirSolicitacaoAdocaoUseCaseImpl(excluirSolicitacaoImpl);
     }
 }

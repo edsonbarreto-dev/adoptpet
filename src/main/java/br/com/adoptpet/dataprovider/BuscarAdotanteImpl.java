@@ -16,13 +16,11 @@ public class BuscarAdotanteImpl implements BuscarAdotante {
     @Autowired
     private AdotanteEntityMapper mapper;
 
-    @Override
     public Adotante findBy(Adotante adotante) {
         AdotanteEntity entity = repository.findBy(adotante);
         return mapper.toAdotante(entity);
     }
 
-    @Override
     public Adotante findById(Long id) throws Exception {
         AdotanteEntity entity = repository.findById(id)
                 .orElseThrow(() -> new Exception("O adotante não foi localizado!"));

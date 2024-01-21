@@ -1,7 +1,7 @@
 package br.com.adoptpet.core.usecase.funcionario.impl;
 
 import br.com.adoptpet.core.dataprovider.funcionario.AlterarFuncionario;
-import br.com.adoptpet.core.dataprovider.BuscarEnderecoPorCep;
+import br.com.adoptpet.core.dataprovider.shared.BuscarEnderecoPorCep;
 import br.com.adoptpet.core.dataprovider.funcionario.BuscarFuncionario;
 import br.com.adoptpet.core.domain.funcionario.Funcionario;
 import br.com.adoptpet.core.usecase.funcionario.AlterarFuncionarioUseCase;

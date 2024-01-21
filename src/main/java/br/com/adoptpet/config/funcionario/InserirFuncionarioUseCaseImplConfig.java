@@ -9,7 +9,7 @@ import br.com.adoptpet.core.usecase.funcionario.impl.InserirFuncionarioUseCaseIm
 @Configuration
 public class InserirFuncionarioUseCaseImplConfig {
     @Bean
-    public InserirFuncionarioUseCaseImpl inserirFuncionarioUseCase(
+    public InserirFuncionarioUseCaseImpl inserirFuncionarioUseCaseImpl(
             BuscarEnderecoPorCepImpl buscarEnderecoPorCepImpl,
             InserirFuncionarioImpl inserirFuncionarioImpl
     ) {

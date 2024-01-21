@@ -10,7 +10,7 @@ import br.com.adoptpet.dataprovider.BuscarFuncionarioImpl;
 public class BuscaFuncionarioUseCaseImplConfig {
 
     @Bean
-    public BuscaFuncionarioUseCaseImpl funcionarioPorIdUseCase(
+    public BuscaFuncionarioUseCaseImpl buscaFuncionarioUseCaseImpl(
             BuscarFuncionarioImpl buscarFuncionarioPorId
     ) {
         return new BuscaFuncionarioUseCaseImpl(buscarFuncionarioPorId);

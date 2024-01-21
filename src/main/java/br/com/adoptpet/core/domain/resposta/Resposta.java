@@ -1,7 +1,7 @@
 package br.com.adoptpet.core.domain.resposta;
 
 import br.com.adoptpet.core.domain.shared.StatusSolicitacaoEnum;
-import br.com.adoptpet.core.domain.solicitacao.Solicitacao;
+import br.com.adoptpet.core.domain.solicitacao_adocao.Solicitacao;
 
 import java.time.LocalDate;
 

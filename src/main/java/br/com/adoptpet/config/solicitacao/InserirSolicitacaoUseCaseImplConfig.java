@@ -4,15 +4,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import br.com.adoptpet.dataprovider.InserirSolicitacaoImpl;
-import br.com.adoptpet.core.usecase.solicitacao.impl.InserirSolicitacaoUseCaseImpl;
+import br.com.adoptpet.core.usecase.solicitacao_adocao.impl.InserirSolicitacaoAdocaoUseCaseImpl;
 
 @Configuration
 public class InserirSolicitacaoUseCaseImplConfig {
 
     @Bean
-    public InserirSolicitacaoUseCaseImpl incluirSolicitacaoUseCase(
+    public InserirSolicitacaoAdocaoUseCaseImpl inserirSolicitacaoAdocaoUseCaseImpl(
             InserirSolicitacaoImpl incluirSolicitacaoImpl
     ) {
-        return new InserirSolicitacaoUseCaseImpl(incluirSolicitacaoImpl);
+        return new InserirSolicitacaoAdocaoUseCaseImpl(incluirSolicitacaoImpl);
     }
 }

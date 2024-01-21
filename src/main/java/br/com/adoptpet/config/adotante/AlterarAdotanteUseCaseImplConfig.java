@@ -11,7 +11,7 @@ import br.com.adoptpet.core.usecase.adotante.impl.AlterarAdotanteUseCaseImpl;
 @Configuration
 public class AlterarAdotanteUseCaseImplConfig {
     @Bean
-    public AlterarAdotanteUseCaseImpl alterarAdotanteUseCase(
+    public AlterarAdotanteUseCaseImpl alterarAdotanteUseCaseImpl(
             BuscarAdotanteUseCaseImpl buscarAdotantePorId,
             BuscarEnderecoPorCepImpl buscarCep,
             AlterarAdotanteImpl alterarAdotante

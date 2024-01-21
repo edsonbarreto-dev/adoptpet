@@ -4,15 +4,15 @@ import br.com.adoptpet.dataprovider.BuscarSolicitacaoImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import br.com.adoptpet.core.usecase.solicitacao.impl.BuscarSolicitacaoUseCaseImpl;
+import br.com.adoptpet.core.usecase.solicitacao_adocao.impl.BuscarSolicitacaoAdocaoUseCaseImpl;
 
 @Configuration
 public class BuscarSolicitacaoUseCaseImplConfig {
 
     @Bean
-    public BuscarSolicitacaoUseCaseImpl alterarSolicitacaoUseCase(
+    public BuscarSolicitacaoAdocaoUseCaseImpl buscarSolicitacaoAdocaoUseCaseImpl(
             BuscarSolicitacaoImpl buscarSolicitacaoImpl
     ) {
-        return new BuscarSolicitacaoUseCaseImpl(buscarSolicitacaoImpl);
+        return new BuscarSolicitacaoAdocaoUseCaseImpl(buscarSolicitacaoImpl);
     }
 }

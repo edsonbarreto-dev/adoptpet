@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class ExcluirAdotanteUseCaseImplConfig {
 
     @Bean
-    public ExcluirAdotanteUseCaseImpl buscarAdotantePorIdUseCaseImpl(
+    public ExcluirAdotanteUseCaseImpl excluirAdotanteUseCaseImpl(
             ExcluirAdotanteUseCase excluirAdotanteUseCase
     ) {
         return new ExcluirAdotanteUseCaseImpl(excluirAdotanteUseCase);

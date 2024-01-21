@@ -9,7 +9,7 @@ import br.com.adoptpet.core.usecase.ong.impl.BuscarOngUseCaseImpl;
 @Configuration
 public class BuscarOngUseCaseImplConfig {
     @Bean
-    public BuscarOngUseCaseImpl ongPorIdUseCase(BuscarOngPorIdImpl buscarOngPorIdImpl) {
+    public BuscarOngUseCaseImpl buscarOngUseCaseImpl(BuscarOngPorIdImpl buscarOngPorIdImpl) {
         return new BuscarOngUseCaseImpl(buscarOngPorIdImpl);
     }
 }

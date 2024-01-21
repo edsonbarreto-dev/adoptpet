@@ -3,7 +3,7 @@ package br.com.adoptpet.core.domain.pet;
 import br.com.adoptpet.core.domain.shared.SexoPetEnum;
 import br.com.adoptpet.core.domain.shared.StatusPetEnum;
 
-public abstract class Pet {
+public class Pet {
     protected final String nome;
     protected final String raca;
     protected int idade;
@@ -22,7 +22,9 @@ public abstract class Pet {
         this.raca = raca;
     }
 
-    public abstract void setRegistro(String registro);
+    public void setRegistro(String registro) {
+        this.registro = registro;
+    }
 
     public String getRegistro() {
         return registro;

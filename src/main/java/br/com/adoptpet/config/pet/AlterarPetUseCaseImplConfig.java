@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AlterarPetUseCaseImplConfig {
     @Bean
-    public AlterarPetUseCaseImpl alterarPetUseCaseImpl(
+    public AlterarPetUseCaseImpl elterarPetUseCaseImpl(
             BuscarPet buscarPet, AlterarPet alterarPet
     ) {
         return new AlterarPetUseCaseImpl(buscarPet, alterarPet);

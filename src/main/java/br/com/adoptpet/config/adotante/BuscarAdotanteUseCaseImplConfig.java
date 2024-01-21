@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class BuscarAdotanteUseCaseImplConfig {
 
     @Bean
-    public BuscarAdotanteUseCaseImpl buscarAdotantePorIdUseCaseImpl(
+    public BuscarAdotanteUseCaseImpl buscarAdotanteUseCaseImpl(
             BuscarAdotanteImpl buscarAdotantePorId
     ) {
         return new BuscarAdotanteUseCaseImpl(buscarAdotantePorId);

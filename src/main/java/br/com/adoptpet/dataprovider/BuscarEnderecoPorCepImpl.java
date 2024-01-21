@@ -1,6 +1,6 @@
 package br.com.adoptpet.dataprovider;
 
-import br.com.adoptpet.core.dataprovider.BuscarEnderecoPorCep;
+import br.com.adoptpet.core.dataprovider.shared.BuscarEnderecoPorCep;
 import br.com.adoptpet.core.domain.shared.Endereco;
 import br.com.adoptpet.dataprovider.repository.BuscarEnderecoPorCepPessoa;
 import org.springframework.beans.factory.annotation.Autowired;

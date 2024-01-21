@@ -10,7 +10,7 @@ import br.com.adoptpet.dataprovider.AlterarOngImpl;
 @Configuration
 public class AlterarOngUseCaseImplConfig {
     @Bean
-    public AlterarOngUseCaseImpl alterarOngUseCase(
+    public AlterarOngUseCaseImpl alterarOngUseCaseImpl(
             BuscarOngPorId buscarOngPorId,
             AlterarOngImpl alterarOng
     ) {

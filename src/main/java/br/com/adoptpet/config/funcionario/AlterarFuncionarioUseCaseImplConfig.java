@@ -11,7 +11,7 @@ import br.com.adoptpet.core.usecase.funcionario.impl.AlterarFuncionarioUseCaseIm
 @Configuration
 public class AlterarFuncionarioUseCaseImplConfig {
     @Bean
-    public AlterarFuncionarioUseCaseImpl alterarFuncionarioUseCase(
+    public AlterarFuncionarioUseCaseImpl alterarFuncionarioUseCaseImpl(
             BuscarFuncionarioImpl buscarFuncionarioPorId,
             BuscarEnderecoPorCepImpl buscarCep,
             AlterarFuncionarioImpl alterarFuncionario

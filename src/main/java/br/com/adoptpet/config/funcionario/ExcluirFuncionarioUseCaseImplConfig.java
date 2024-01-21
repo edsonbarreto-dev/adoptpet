@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 public class ExcluirFuncionarioUseCaseImplConfig {
 
     @Bean
-    public ExcluirFuncionarioUseCaseImpl excluirFuncionarioPorIdUseCase(
+    public ExcluirFuncionarioUseCaseImpl excluirFuncionarioUseCaseImpl(
             ExcluirFuncionarioImpl excluirFuncionario,
             BuscarFuncionarioImpl buscarFuncionario
     ) {

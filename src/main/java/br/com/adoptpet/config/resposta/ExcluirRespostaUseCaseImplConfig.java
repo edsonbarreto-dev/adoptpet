@@ -10,7 +10,7 @@ import br.com.adoptpet.core.usecase.resposta.impl.ExcluirRespostaUseCaseImpl;
 public class ExcluirRespostaUseCaseImplConfig {
 
     @Bean
-    public ExcluirRespostaUseCaseImpl excluirSolicitacaoUseCase(
+    public ExcluirRespostaUseCaseImpl excluirRespostaUseCaseImpl(
             ExcluirRespostaImpl excluirRespostaImpl
     ) {
         return new ExcluirRespostaUseCaseImpl(excluirRespostaImpl);

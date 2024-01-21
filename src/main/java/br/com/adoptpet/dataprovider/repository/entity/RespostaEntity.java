@@ -11,13 +11,13 @@ public class RespostaEntity {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     @ManyToOne
-    private SolicitacaoEntity solicitacao;
+    private SolicitacaoAdocaoEntity solicitacao;
     @Enumerated(EnumType.STRING)
     private StatusSolicitacaoEnum resposta = StatusSolicitacaoEnum.EM_ANALISE;
     private LocalDate dataResposta = LocalDate.now();
     private String observacao;
 
-    public RespostaEntity(SolicitacaoEntity solicitacao, StatusSolicitacaoEnum resposta, LocalDate dataResposta, String observacao) {
+    public RespostaEntity(SolicitacaoAdocaoEntity solicitacao, StatusSolicitacaoEnum resposta, LocalDate dataResposta, String observacao) {
         this.solicitacao = solicitacao;
         this.resposta = resposta;
         this.dataResposta = dataResposta;
