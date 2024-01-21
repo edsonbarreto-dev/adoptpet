@@ -4,7 +4,6 @@ import br.com.adoptpet.core.domain.shared.SexoPetEnum;
 import br.com.adoptpet.core.domain.shared.StatusPetEnum;
 
 public abstract class Pet {
-
     protected final String nome;
     protected final String raca;
     protected int idade;
